@@ -1,0 +1,5 @@
+print('====== DESAFIO 7 ======')
+nome = str(input('Digite o nome do aluno: '))
+nota1 = float(input('Digite a primeira nota do aluno: '))
+nota2 = float(input('Digite a segunda nota do aluno: '))
+print('O aluno {} tirou {:.1f} e {:.1f}! Sua média final foi de: {}.'.format(nome, nota1, nota2, (nota1+nota2)/2))

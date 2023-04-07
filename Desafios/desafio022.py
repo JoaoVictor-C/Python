@@ -1,0 +1,6 @@
+print('===== DESAFIO 22 =====')
+nome = str(input('Digite um nome: '))
+print('O nome digitado {} em maiúsculas é {}!'.format(nome, nome.upper()))
+print('O nome digitado {} em minúsculas é {}!'.format(nome, nome.lower()))
+print('O nome digitado {} tem {} letras sem considerar espaço!'.format(nome, nome.count('',0)))
+print('A primeira palavra do nome {} tem {} letras!'.format(nome, len(nome.split()[0])))
