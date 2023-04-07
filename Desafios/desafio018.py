@@ -2,7 +2,7 @@ import math
 
 print('===== DESAFIO 18 =====')
 angle = float(input('Digite um angulo: '))
-angle = math.radians(angle)
+angle = math.radians5(angle)
 sen = math.sin(angle)
 cos = math.cos(angle)
 tng = math.tan(angle)
