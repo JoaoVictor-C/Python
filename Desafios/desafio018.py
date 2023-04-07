@@ -1,5 +1,6 @@
 import math
 
+print('===== DESAFIO 18 =====')
 angle = float(input('Digite um número: '))
 angle = math.radians(angle)
 sen = math.sin(angle)
