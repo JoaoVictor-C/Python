@@ -10,8 +10,8 @@ sleep(2)
 nAleatorio = random.randint(0,5)
 if valor <= 5 and valor > 0:
    if valor == nAleatorio:
-      print('Parabéns! Você acertou o número!')
+      print('\033[1;32mParabéns! Você acertou o número!\033[m')
    else:
-      print('Você perdeu! Eu pensei no número {} e não no número {}!'.format(nAleatorio, valor))
+      print('\033[1;31mVocê perdeu! Eu pensei no número {}, e não no número {}!\033[m'.format(nAleatorio, valor))
 else:
    print('Insira um valor válido entre 1 e 5.')
