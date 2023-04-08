@@ -1,13 +1,17 @@
 import random
+from time import sleep
 print('===== DESAFIO 28 =====')
-valor = int(input('Digite um valor entre 1 e 5: '))
-nAleatorio = random.randint(1,5)
+print('-=-' * 20)
+print('Vou pensar em um número entre 0 e 5 tente advinhar...')
+print('-=-' * 20)
+valor = int(input('Em que número eu pensei? '))
+print('Processando...')
+sleep(2)
+nAleatorio = random.randint(0,5)
 if valor <= 5 and valor > 0:
    if valor == nAleatorio:
-      print('Você acertou o número!')
-      print('Valor digitado: {} | Valor aleatório: {}'.format(valor, nAleatorio))
+      print('Parabéns! Você acertou o número!')
    else:
-      print('Você errou o número! O número escolhido foi {}.'.format(nAleatorio))
-      print('Valor digitado: {} | Valor aleatório: {}'.format(valor, nAleatorio))
+      print('Você perdeu! Eu pensei no número {} e não no número {}!'.format(nAleatorio, valor))
 else:
    print('Insira um valor válido entre 1 e 5.')
