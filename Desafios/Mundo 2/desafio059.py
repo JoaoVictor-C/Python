@@ -1,4 +1,4 @@
-print('===== DESAFIO 58 =====')
+print('===== DESAFIO 59 =====')
 n1 = int(input('Insira o primeiro número: '))
 n2 = int(input('Insira o segundo número: '))
 n = 0
