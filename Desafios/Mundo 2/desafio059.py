@@ -3,7 +3,7 @@ n1 = int(input('Insira o primeiro número: '))
 n2 = int(input('Insira o segundo número: '))
 n = 0
 while n != 5:
-   n = int(input('[1] Somar\n[2] Multiplicar\n[3] Maior\n[4] Novos números\n[5] Sair do progama\n'))
+   n = int(input('\033[1;33m[1]\033[m \033[36mSomar\033[m\n\033[1;33m[2]\033[m \033[36mMultiplicar\033[m\n\033[1;33m[3]\033[m \033[36mMaior\033[m\n\033[1;33m[4]\033[m \033[36mNovos números\033[m\n\033[1;33m[5]\033[m \033[36mSair do progama\033[m\n'))
    if n == 1:
       print('A soma entre {} e {} é {}.'.format(n1, n2, n1+n2))
       res = input('Deseja voltar ao menu?  [S] [N]').upper()
