@@ -8,18 +8,22 @@ while p <= n-1:
    if p == 0:
       print(0)
       p += 1
+      
    if p-n < 1:
       print(res1)
       res1 = res2 + res3
       p += 1
+      
    if p-n < 0:
       print(res2)
       res2 = res1 + res3
       p += 1
+      
    if p-n < 0:
       print(res3)
       res3 = res2 + res1
       p += 1
+      
       
 # 0 +  0    = 0
 # 1 +  0    = 1       
