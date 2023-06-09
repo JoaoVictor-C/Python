@@ -22,19 +22,19 @@ while True:
 
 numeros = (n1, n2, n3, n4)
 
-qtd9 = 0
-pos3 = 0
+print(f'Você digitou os números {numeros}')
 
-print('Os numeros pares digitados foram:')
-for pos, c in enumerate(numeros):
-    if c == 9:
-        qtd9 += 1
-
-    if c == 3 and pos3 == 0:
-        pos3 = pos
+if 9 in numeros:
+    print(f'Foram digitados {numeros.count(9)} números 9!')
+else:
+    print('O número 9 não foi digitado!')
     
+if 3 in numeros:
+    print(f'O número 3 foi digitado pela primeira vez na {numeros.index(3)+1}º tentativa! E está na posição {numeros.index(3)}.')
+else:
+    print('O valor 3 não foi digitado!')
+    
+print('Os numeros pares digitados foram:', end='')
+for c in numeros:
     if c % 2 == 0:
-        print(c)
-
-print(f'Foram digitados {qtd9} números 9!')
-print(f'O número 3 foi digitado pela primeira vez na {pos3+1}º tentativa! E está na posição {pos3}.')
+        print(c, end='')
