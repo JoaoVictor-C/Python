@@ -26,3 +26,7 @@ print('\n')
 for pos, c in enumerate(times):
     if c == 'Chapecoense':
         print(f'O time Chapecoense está na posição {pos}º')
+        
+print('\n')
+print(20*'-=-')
+print('\n')
