@@ -1,4 +1,3 @@
-print('===== DESAFIO 76 =====')
 precos = (
    'Lápis', 1.75, 
    'Borracha', 2.00, 
