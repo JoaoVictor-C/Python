@@ -1,6 +1,5 @@
 from random import randint
 
-
 num = []
 inpt = 0
 
