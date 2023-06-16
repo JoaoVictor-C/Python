@@ -9,20 +9,19 @@ while True:
     idade = int(input('Ano de Nascimento:\n> '))
     cadastro['idade'] = now.year - idade
     cadastro['ctps'] = int(input('Carteira de trabalho (0 caso não tenha):\n> ')) 
-    if cadastro['ctps'] == 0:
+    if cadastro['ctps'] != 0:
         cadastro['ano de contratação'] = int(input('Ano de contratação:\n> '))
         cadastro['salario'] = int(input('Sálario:\n> '))
-    aposentadoria = now.year - cadastro['ano de contratação']
     break
 print('\n', '*-*' * 20)
 print(cadastro)
 print('\n', '*-*' * 20)
 
-contribuicao = now.year - cadastro['ano de contratação']
 
-if idade < 60:
-    aposentadoria += 60 - idade
-
-if aposentadoria + (now.year - cadastro['ano de contratação']) > 30
-    aposentadoria += now.year - cadastro['ano de contratação']
-
+aposentadoria += (now.year - cadastro['ano de contratação']) + (now.year - idade)
+if (now.year - idade) >= 65 or  (now.year - cadastro['ano de contratação']) >= 35:
+    cadastro['aposentadoria'] = 'pode se aposentar'
+else:
+    cadastro['aposentadoria'] = f'não pode se aposentar, falta {aposentadoria} anos'
+for k, v in cadastro.items():
+    print(f'O campo {k} tem valor {v}!')
